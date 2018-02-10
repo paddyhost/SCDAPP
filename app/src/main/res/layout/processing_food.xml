@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_intro"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/loading"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/imageview1"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/loading_tray"
+                app:layout_collapseMode="parallax"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="65dp"/>
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_intro"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#fff"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                android:background="@color/loading"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toolbar_title"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/white"
+                        android:text="Processing Food and Hygiene"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/loading"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/linear1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/text1"
+                android:textSize="18dp"
+                android:textColor="#133a43"
+                android:text="The following factors should be observed when processing food using Solar Conduction Dryer technology:"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/one"
+                android:text="1"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textColor="#4a666c"
+                android:textStyle="bold"
+                android:layout_marginLeft="17dp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:gravity="center|start"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.8"
+                android:textColor="#133a43"
+                android:id="@+id/text2"
+                android:text="The processor(personnel) cleanliness" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear3">
+
+            <TextView
+                android:text="2"
+                android:id="@+id/two"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textColor="#4a666c"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:gravity="center|start"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.8"
+                android:textColor="#133a43"
+                android:id="@+id/text3"
+                android:text="The processing place (room) cleanliness"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear4">
+
+            <TextView
+                android:id="@+id/three"
+                android:text="3"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textColor="#4a666c"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:gravity="center|start"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.8"
+                android:textColor="#133a43"
+                android:id="@+id/text4"
+                android:text="The equipment and tools cleanliness"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear5">
+
+            <TextView
+                android:text="4"
+                android:id="@+id/four"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textColor="#4a666c"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:gravity="center|start"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.8"
+                android:textColor="#133a43"
+                android:id="@+id/text5"
+                android:text="General processing cleanliness"
+                />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,345 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Solar Conduction Dryer"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        android:layout_below="@+id/appbarlayout"
+        android:id="@+id/grid_layout"
+        android:columnCount="1"
+        android:padding="0dp">
+
+        <LinearLayout
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="#F23A5D"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/introduction2"
+                    android:id="@+id/image_intro"
+                    android:layout_gravity="center"
+                    android:padding="30dp"
+                    android:onClick="onClick"
+                    android:transitionName="@string/simple_fragment_transition"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight="7"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textSize="18dp"
+                    android:text="Introduction"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#19BC74">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/parts"
+                    android:layout_gravity="center"
+                    android:padding="30dp"
+                    android:transitionName="@string/simple_fragment_transition"
+                    android:id="@+id/image_part"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight="7"
+                    android:textColor="#015c24"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="Parts of SCD"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:background="@color/assembly"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/assembly"
+                            android:layout_gravity="center"
+                            android:transitionName="@string/simple_fragment_transition"
+                            android:background="@color/assembly"
+                            android:padding="30dp"
+                            android:id="@+id/image_assembly"
+                            android:layout_weight="1"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_weight="7"
+                            android:textColor="#5b4501"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="Assembly Procedure"
+                            android:paddingBottom="5dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:transitionName="@string/simple_fragment_transition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/loading_tray"
+                            android:layout_gravity="center"
+                            android:padding="30dp"
+                            android:id="@+id/image_loading"
+                            android:layout_weight="1"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_weight="7"
+                            android:textColor="#133a43"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:textSize="18dp"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:text="Procedure to Load SCD Tray"
+                            android:paddingBottom="5dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:background="@color/weather_greed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/weather"
+                            android:layout_gravity="center"
+                            android:padding="30dp"
+                            android:transitionName="@string/simple_fragment_transition"
+                            android:id="@+id/image_whether"
+                            android:background="@color/weather_greed"
+                            android:layout_weight="1"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_weight="7"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:textSize="18dp"
+                            android:text="Weather"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:paddingBottom="5dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/care"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/rent_plus"
+                            android:transitionName="@string/simple_fragment_transition"
+                            android:layout_gravity="center"
+                            android:padding="30dp"
+                            android:background="@color/care"
+                            android:id="@+id/image_care"
+                            android:layout_weight="1"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_weight="7"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:textSize="18dp"
+                            android:textAllCaps="true"
+                            android:text="Rent+"
+                            android:textStyle="bold"
+                            android:paddingBottom="5dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#252433"
+        android:layout_below="@+id/grid_layout">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_line_image"
+            android:src="@drawable/telephone"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help_line"
+            android:text="Helpline : +91-9004408849 | +91-7588565627"
+            android:background="#252433"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

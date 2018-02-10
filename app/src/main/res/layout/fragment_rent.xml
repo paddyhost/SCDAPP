@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/care"
+    tools:context=".activity.activity.Menu_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_intro"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/care"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:id="@+id/imageview1"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/care"
+                app:layout_collapseMode="parallax"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="65dp"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_intro"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#2b2252"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                android:background="@color/care"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- android:textColor="#395D75"-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toolbar_title"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="Rent+"
+                        android:layout_marginLeft="15dp"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/care">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/linear1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scd"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ccc4ef"
+                    android:text="Location and Orientation of SCD"
+                    android:layout_below="@+id/image_intro"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/textview_corner_care"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative1"
+                android:layout_below="@id/linear1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@id/linear1"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ckeckMark1"
+                    android:background="@drawable/check_mark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt1"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="SCD should be installed at a clean , hygienic and dust free place."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@id/linear2"
+                    android:layout_below="@id/linear1"
+                    android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ckeckMark2"
+                    android:background="@drawable/check_mark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt2"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Where ever possible, concrete ﬂooring is recommended, to prevent the contamination by dust etc."/>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@id/linear3"
+                    android:layout_below="@id/linear2"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_ckeckMark3"
+                        android:background="@drawable/check_mark"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt3"
+                        android:textSize="13dp"
+                        android:textColor="#ccc4ef"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Installation place should get the sunlight through out the day i.e. should be shadow-free, to maximize the utilization of solar thermal energy."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@id/linear4"
+                    android:layout_below="@id/linear3"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_ckeckMark4"
+                        android:background="@drawable/check_mark"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt4"
+                        android:textSize="13dp"
+                        android:textColor="#ccc4ef"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="SCD should be placed in such a way that its chimney (central hood) is parallel to the East-West direction. In other words, trays should be operated in North-South direction."/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/linear2"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/relative1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/food"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="45dp"
+                    android:text="Processing Food and Hygiene"
+                    android:background="@drawable/textview_corner_care"/>
+            </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative2"
+            android:layout_below="@id/linear2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@id/linear1"
+                android:paddingTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt6"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="55dp"
+                    android:text="The following factors should be observed when processing food using Solar Conduction Dryer technology:"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/linear1"
+                android:id="@id/linear2"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ckeckMark5"
+                    android:background="@drawable/check_mark"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt7"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="The processor(personnel) cleanliness"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/linear2"
+                android:id="@id/linear3"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ckeckMark6"
+                    android:background="@drawable/check_mark"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt8"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="The processing place (room) cleanliness"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/linear3"
+                android:id="@id/linear4"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ckeckMark7"
+                    android:background="@drawable/check_mark"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt9"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="The equipment and tools cleanliness"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/linear4"
+                android:id="@+id/linear5"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ckeckMark8"
+                    android:background="@drawable/check_mark"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt10"
+                    android:textSize="13dp"
+                    android:textColor="#ccc4ef"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="General processing cleanliness"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+</RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ccc4ef"
+        android:text="Coming Soon....."
+        android:textSize="40dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
