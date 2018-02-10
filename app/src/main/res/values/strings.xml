@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Solar_Conduction_Dryer</string>
+    <string name="Settings">Settings</string>
+
+
+
+    <string name="Solar_conduction_Drayer">Solar Conduction Dryer is a solar powered food
+dehydrator. It reduces moisture content in agro and
+marine  produces  so  that  their  shelf-life  could  be
+increased up-to 1year.</string>
+    <string name="dehydration" formatted="false">\n\u2022Fresh products ( fruits, vegetables, ﬁshes etc. ) have moisture contents of about 70–95%. At these values, the product is subject to deteriorate very quickly  as  microorganisms  are  very  active.  Solar  Conduction  Dryer  can remove moisture content to about 5–15%.
+    \n\u2022At these levels, depending on the type of the product-the products are
+free from microorganism reactions or activities.
+    \n\u2022Food dehydration together with food preservation aims to prolong the
+shelf life of agricultural products, control the seasonal variation of food
+supply, stabilise the marketing of agricultural products and improve the
+food quality.</string>
+
+
+    <string name="location_description" formatted="false">\u2022SCD should be installed at a clean , hygienic and dust free place.
+\n\u2022Where ever possible, concrete ﬂooring is recommended, to
+  prevent the contamination by dust etc.
+\n\u2022Installation place should get the sunlight through out the day i.e.
+  should be shadow-free, to maximize the utilization of solar
+  thermal energy.
+\n\u2022SCD should be placed in such a way that its chimney (central
+  hood) is parallel to the East-West direction. In other words, trays
+  should be operated in North-South direction.</string>
+    <string name="food_hygiene" formatted="false">The following factors should be observed when processing
+food using Solar ConductionDryer technology:
+\n\u2022The processor (personnel)cleanliness
+\n\u2022The processing place (room) cleanliness
+\n\u2022The equipment and tools cleanliness
+\n\u2022General processing cleanliness
+\nWhile preparing material to be dried, one must consider:
+\n\u2022Selection of quality fruits/ vegetables/ﬁshes
+\n\u2022Washing
+\n\u2022Peeling
+\n\u2022Cutting or slicing into small pieces</string>
+
+    <string name="procedure" formatted="false">\u2022Trays should be cleaned with soft cloth and mild dish-washing
+  liquid before use. Excess water/ juice should be drained off
+  from the sliced  material before loading.
+\n\u202270-80% of the area on the trays should be evenly covered with
+  the single layer of material to be dried.20-30% of the black
+  surface should be evenly exposed to solar radiations, it will act
+  as a heat-absorber.
+\n\u2022It is recommended to load dryers in the morning as early as
+  possible. It  is also recommended to unload dryers when the
+  product is dried.
+\n\u2022In case the material is very sticky, it should be turned up side
+  down, intermediately, to avoid sticking to the trays.
+\n\u2022In last stage of drying, material should be inspected to prevent
+  over-drying.</string>
+    <string name="factor">The  drying  time  is  very  subjective  entity  and  it  depends  on variety of factors such as:
+\n\u2022 Slices/ cuts and layer Depth of the Drying Material
+\n\u2022Solar Radiation Intensity
+\n\u2022Ambient Temperature
+\n\u2022Relative Humidity</string>
+
+
+    <string name="hello" formatted="false">
+<![CDATA[
+<html>
+ <head></head>
+ <body style="text-align:justify;color:gray;background-color:black;">
+  Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit. Nunc pellentesque, urna
+  nec hendrerit pellentesque, risus massa
+ </body>
+</html>
+]]>
+</string>
+
+    <string-array name="Parts_Name">
+        <item>Main Metal Structure</item>
+        <item>Central Black Rod</item>
+        <item>Small Gray C - channels</item>
+        <item>Slider - to support the trays of SCD</item>
+        <item>Insects Protection Net with Velcro</item>
+        <item>Top Hood for Ventilation</item>
+        <item>PC Sheets</item>
+        <item>4 SCD Trays - on which material will be kept for drying</item>
+    </string-array>
+
+
+    <string-array name="Parts_No">
+        <item>2 Nos.</item>
+        <item>1 Nos.</item>
+        <item>2 Nos.</item>
+        <item>1 Nos.</item>
+        <item>2 Nos.</item>
+        <item>1 Nos.</item>
+        <item>2 Nos.</item>
+        <item>4 Nos.</item>
+
+    </string-array>
+
+    <string name="location">Location and Orientation of SCD</string>
+    <string name="food">Processing of Food and Hygiene</string>
+    <string name="assembly" formatted="false">Keep Metal stucture facing \n
+        \t\tSliders on inner side</string>
+
+
+    <string name="simple_fragment_transition">transition</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">start</string>
+    <string name="next">next</string>
+    <string name="Done">Done</string>
+    <string name="profile">profile</string>
+
+</resources>

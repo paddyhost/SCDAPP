@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/weather_greed"
+    tools:context=".activity.scd_menus.whether.Whether_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/dayw"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/day"
+        android:layout_below="@+id/dayw"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#09045e"
+        />
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/weathericon"
+        android:layout_below="@+id/day"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/wheather"
+        android:text="grant Location Permission"
+        android:layout_below="@+id/weathericon"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+    <View
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/topview"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/wheather"
+        android:background="@color/white"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@+id/topview"
+    android:gravity="center"
+    android:id="@+id/mainlaoyot"
+android:weightSum="2"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/temperature"
+            android:textStyle="bold"
+            android:maxLength="2"
+            android:textSize="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/cc"
+                android:text="111"
+                android:maxLength="2"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:text="C"
+                android:maxLength="2"
+                android:textSize="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="Tempreture"
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/weatherhuminity"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="Humidity"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+android:id="@+id/bottomview"
+        android:layout_below="@+id/mainlaoyot"
+        android:background="@color/white"/>
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/like"
+        android:id="@+id/likeicon"
+        android:layout_below="@+id/bottomview"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/message"
+        android:layout_below="@+id/likeicon"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/message2"
+        android:layout_below="@+id/message"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

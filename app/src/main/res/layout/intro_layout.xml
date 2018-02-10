@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intro"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+      android:layout_width="190dp"
+      android:layout_height="190dp"
+      android:id="@+id/image_intro"
+      android:src="@mipmap/introduction"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="100dp"
+      android:layout_centerHorizontal="true"/>
+
+   <!-- <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/introduction"
+      android:text="INTRODUCTION"
+      android:textColor="@color/white"
+      android:textStyle="bold"
+      android:layout_below="@+id/image_intro"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"/>-->
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/scd"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      android:layout_marginLeft="80dp"
+      android:textColor="@color/white"
+      android:text="Solar Conduction Dryer"
+        android:layout_marginTop="25dp"
+      android:layout_centerHorizontal="true"
+      android:background="@drawable/textview_corner"/>
+ <!--<TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/description"
+      android:textSize="16dp"
+      android:textColor="@color/white"
+      android:text="@string/Solar_conduction_Drayer"
+      android:layout_below="@+id/scd"
+      android:layout_marginTop="30dp"
+      android:gravity="center|left"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:lineSpacingExtra="5dp"/>
+-->
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+      </RelativeLayout>

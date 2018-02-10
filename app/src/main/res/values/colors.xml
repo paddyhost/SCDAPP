@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#068B55</color>
+
+    <color name="colorPrimary">#fff</color>
+    <color name="colorAccent">#50000000</color>
+    <color name="yellow">#ecda3f</color>
+    <color name="orange">#ffb814</color>
+    <color name="FaintGreen">#99e75a</color>
+    <color name="DarkGreen">#28842e</color>
+    <color name="light_background">#F4FF81</color>
+    <color name="lemon_yellow">#FFF700</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="background_color">#9af0f4c3</color>
+    <color name="diaonal_color">#7b068b55</color>
+    <color name="android_green">#A4C639</color>
+    <color name="dark_blue">#3c488f</color>
+    <color name="grey">#83808080</color>
+    <color name="transprent_grey">#28808080</color>
+
+    <color name="active_dot_color">#5b4501</color>
+    <color name="inactive_dot_color">#ffffff</color>
+
+    <color name="active_dot_color_loading">#3d646e</color>
+    <color name="inactive_dot_color_loading">#ffffff</color>
+
+
+    <color name="list_divider">#28808080</color>
+    <color name="list_select">#28842e</color>
+
+    <array name="array_dot_active">
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+        <item>@color/active_dot_color</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+        <item>@color/inactive_dot_color</item>
+
+    </array>
+
+    <array name="array_dot_active_loading">
+        <item>@color/active_dot_color_loading</item>
+        <item>@color/active_dot_color_loading</item>
+        <item>@color/active_dot_color_loading</item>
+    </array>
+
+    <array name="array_dot_inactive_loading">
+        <item>@color/inactive_dot_color_loading</item>
+        <item>@color/inactive_dot_color_loading</item>
+        <item>@color/inactive_dot_color_loading</item>
+    </array>
+
+    <color name="weather_greed">#37addd</color>
+    <color name="intro">#ff5858</color>
+    <color name="intro1">#F23A5D</color>
+    <color name="parts">#32e477</color>
+    <color name="parts1">#19BC74</color>
+    <color name="assembly">#ffcc33</color>
+    <color name="loading">#4b808d</color>
+    <color name="care">#684ed8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#74000000</color>
+    <color name="brown">#896c17</color>
+    <color name="parts2">#6119bc74</color>
+    <color name="parts3">#4719bc74</color>
+    <color name="intro_toolbar">#F0E7CA</color>
+
+</resources>
