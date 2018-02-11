@@ -19,9 +19,9 @@ public class Menu_Adapter  extends BaseAdapter {
 
 
     public Integer[] menu_images = {
-            R.mipmap.introduction, R.mipmap.parts,
-            R.mipmap.assembly, R.mipmap.loading_tray,
-            R.mipmap.weather, R.mipmap.care
+            R.drawable.introduction2, R.drawable.parts,
+            R.drawable.assembly, R.drawable.loading_tray,
+            R.drawable.weather, R.drawable.rent_plus
     };
 
     public Integer[] colors = {

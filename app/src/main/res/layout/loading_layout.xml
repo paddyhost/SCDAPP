@@ -21,17 +21,15 @@
             android:background="@color/loading"
             app:layout_scrollFlags="exitUntilCollapsed|scroll">
 
-
-
             <ImageView
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:id="@+id/imageview1"
                 android:scaleType="centerCrop"
-                android:background="@mipmap/loading_tray"
+                android:background="@drawable/loading_tray"
                 app:layout_collapseMode="parallax"
                 android:layout_gravity="center|top"
-                android:layout_marginTop="65dp"/>
+                android:layout_marginTop="50dp"/>
 
 
 
@@ -79,7 +77,6 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/loading"
@@ -114,6 +111,7 @@
                 android:layout_weight="1.8"
                 android:gravity="center|start"
                 android:id="@+id/text1"
+                android:layout_marginRight="20dp"
                 android:layout_marginLeft="15dp"
                 android:text="Trays should be cleaned with soft cloth and mild dish-washing liquid before use. Excess water/ juice should be drained off from the sliced  material before loading."
                />
@@ -150,6 +148,7 @@
                     android:layout_weight="1.8"
                     android:gravity="center|start"
                     android:id="@+id/text2"
+                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="15dp"
                     android:text="70-80% of the area on the trays should be evenly covered with the single layer of material to be dried.20-30% of the black surface should be evenly exposed to solar radiations, it will act as a heat-absorber."
                     />
@@ -186,6 +185,7 @@
                     android:layout_weight="1.8"
                     android:gravity="center|start"
                     android:id="@+id/text3"
+                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="15dp"
                     android:text="It is recommended to load dryers in the morning as early as possible. It  is also recommended to unload dryers when the product is dried."
                     />
@@ -222,6 +222,7 @@
                     android:layout_weight="1.8"
                     android:gravity="center|start"
                     android:id="@+id/text4"
+                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="15dp"
                     android:text="In case the material is very sticky, it should be turned up side down, intermediately, to avoid sticking to the trays."
                     />
@@ -258,6 +259,7 @@
                     android:layout_weight="1.8"
                     android:gravity="center|start"
                     android:id="@+id/text5"
+                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="15dp"
                     android:text="In last stage of drying, material should be inspected to prevent over-drying."
                     />
