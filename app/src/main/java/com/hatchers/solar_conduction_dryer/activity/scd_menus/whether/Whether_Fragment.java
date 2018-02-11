@@ -45,6 +45,7 @@ public class Whether_Fragment extends Fragment {
     private ImageView wheatherImg,weatherLikeImg;
     TextView textpalce;
     TextView textweather;
+
     public Whether_Fragment() {
         // Required empty public constructor
     }
@@ -215,8 +216,10 @@ public class Whether_Fragment extends Fragment {
                         textweather.setText("" + weather.getHumidity());
                         temperatureTxt.setText("" + Html.fromHtml(weather.getTemperature(Weather.CELSIUS) + "<sup>o</sup>C"));
 
-
-                        if(WeatherConstants.HUMIDITY_EXCELLENT_MIN < weather.getHumidity() &&  weather.getHumidity()< WeatherConstants.HUMIDITY_EXCELLENT_MAX)
+                        float temp=weather.getTemperature(Weather.CELSIUS);
+                        if(weather.getHumidity() > WeatherConstants.HUMIDITY_EXCELLENT_MIN &&
+                                weather.getHumidity() < WeatherConstants.HUMIDITY_EXCELLENT_MAX &&
+                                temp>= WeatherConstants.TEMPERATURE_EXCELLENT_MAX)
                         {
                             wheatherImg.setImageDrawable(getResources().getDrawable(R.drawable.sun));
                             weatherReportTxt.setText("Sunny Environment");
@@ -224,7 +227,10 @@ public class Whether_Fragment extends Fragment {
                             msgToDryOrNotTxt.setText("Weather Excellent for Drying");
                         }
 
-                        else if(WeatherConstants.HUMIDITY_GOOD_MIN < weather.getHumidity() &&  weather.getHumidity()< WeatherConstants.HUMIDITY_GOOD_MAX)
+                        else if(weather.getHumidity() > WeatherConstants.HUMIDITY_GOOD_MIN &&
+                                weather.getHumidity() < WeatherConstants.HUMIDITY_GOOD_MAX &&
+                                temp > WeatherConstants.TEMPERATURE_GOOD_MIN &&
+                                temp < WeatherConstants.TEMPERATURE_GOOD_MAX)
                         {
                             wheatherImg.setImageDrawable(getResources().getDrawable(R.drawable.sun));
                             weatherReportTxt.setText("Sunny Environment");
@@ -233,7 +239,10 @@ public class Whether_Fragment extends Fragment {
                         }
 
 
-                        else if(WeatherConstants.HUMIDITY_MODERATE_MIN < weather.getHumidity() &&  weather.getHumidity()< WeatherConstants.HUMIDITY_MODERATE_MAX)
+                        else if(weather.getHumidity() > WeatherConstants.HUMIDITY_MODERATE_MIN &&
+                                weather.getHumidity() < WeatherConstants.HUMIDITY_MODERATE_MAX &&
+                                temp > WeatherConstants.TEMPERATURE_MODERATE_MIN &&
+                                temp < WeatherConstants.TEMPERATURE_MODERATE_MAX)
                         {
                             wheatherImg.setImageDrawable(getResources().getDrawable(R.drawable.cloudyday));
                             weatherReportTxt.setText("Cloudy Environment");
@@ -243,13 +252,25 @@ public class Whether_Fragment extends Fragment {
                         }
 
 
-                        else if(WeatherConstants.HUMIDITY_NOT_SUITABLE_MIN < weather.getHumidity() &&  weather.getHumidity()< WeatherConstants.HUMIDITY_NOT_SUITABLE_MAX)
+                        else if(weather.getHumidity() < WeatherConstants.HUMIDITY_NOT_SUITABLE_MIN &&
+                                weather.getHumidity() > WeatherConstants.HUMIDITY_NOT_SUITABLE_MAX &&
+                                temp <= WeatherConstants.TEMPERATURE_NOTSUITABLE_MAX)
                         {
                             wheatherImg.setImageDrawable(getResources().getDrawable(R.drawable.rainy));
                             weatherReportTxt.setText("Rainy Environment");
                             weatherMsgTxt.setText("Oops!!!");
                             msgToDryOrNotTxt.setText("Weather Not Suitable for Drying");
                             weatherLikeImg.setRotation(180);
+                        }
+
+                        else
+                        {
+                            wheatherImg.setImageDrawable(getResources().getDrawable(R.drawable.cloudyday));
+                            weatherReportTxt.setText("Unknown Environment");
+                            weatherLikeImg.setRotation(180);
+                            weatherMsgTxt.setText("Opps!!!");
+                            msgToDryOrNotTxt.setText("Not Sutaible for Drying");
+
                         }
                         /*Weather weather = weatherResult.getWeather();
                         textweather.setText("" + weather.getHumidity());

@@ -28,7 +28,7 @@
                 android:layout_height="180dp"
                 android:id="@+id/imageview1"
                 android:scaleType="centerCrop"
-                android:background="@mipmap/loading_tray"
+                android:background="@drawable/loading_tray"
                 app:layout_collapseMode="parallax"
                 android:layout_gravity="center|top"
                 android:layout_marginTop="65dp"/>

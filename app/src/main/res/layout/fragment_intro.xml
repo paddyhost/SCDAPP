@@ -29,7 +29,7 @@
                 android:layout_height="190dp"
                 android:id="@+id/imageview1"
                 android:scaleType="centerCrop"
-                android:background="@mipmap/introduction2"
+                android:background="@drawable/introduction2"
                 app:layout_collapseMode="parallax"
                 android:layout_gravity="center|top"
                 android:layout_marginTop="65dp"/>
